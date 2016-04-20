@@ -2,12 +2,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Leetspeak {
-  public static void main(String[] args) {
-
-  }
 
   public static String leetSpeakIt(String inputWords) {
-
     HashMap<String, String> leetLibrary = new HashMap<String, String>();
     leetLibrary.put("e", "3");
     leetLibrary.put("E", "3");
@@ -19,11 +15,14 @@ public class Leetspeak {
     char[] letterArray = inputWords.toCharArray();
     String leetWords = new String();
 
-    for (char letter : letterArray) {
-      // if ( leetLibrary.get(letter) != null )
-      leetWords += leetLibrary.get(Character.toString(letterArray[0]));
-    } // else {}
-    return leetWords;
+    for (int i = 0 ; i < letterArray.length ; i++) {
+      String letter = Character.toString(letterArray[i]);
+      if ( leetLibrary.get(letter) != null ) {
+        leetWords += leetLibrary.get(letter);
+      } else {
+          leetWords += letter;
+      }
+    } return leetWords;
   }
 }
 

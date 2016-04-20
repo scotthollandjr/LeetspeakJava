@@ -23,4 +23,11 @@ public class LeetspeakTest {
     String expected = "330";
     assertEquals(expected, testLeet.leetSpeakIt("Eeo"));
   }
+
+  @Test
+  public void convert_replaceLettersWithLeet_mult() {
+    Leetspeak testLeet = new Leetspeak();
+    String expected = "1 l0v3 3pic0duz";
+    assertEquals(expected, testLeet.leetSpeakIt("I love Epicodus"));
+  }
 }
