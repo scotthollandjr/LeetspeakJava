@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LeetspeakTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2016-04-20T05:18:06" hostname="StompyComp" time="0.016">
+<testsuite name="LeetspeakTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2016-04-20T05:20:21" hostname="StompyComp" time="0.005">
   <properties/>
-  <testcase name="convert_replaceLettersWithLeet_E_3" classname="LeetspeakTest" time="0.003"/>
-  <testcase name="convert_replaceLettersWithLeet_S_S" classname="LeetspeakTest" time="0.012">
+  <testcase name="convert_replaceLettersWithLeet_E_3" classname="LeetspeakTest" time="0.002"/>
+  <testcase name="convert_replaceLettersWithLeet_S_S" classname="LeetspeakTest" time="0.002">
     <failure message="org.junit.ComparisonFailure: expected:&lt;33[0]&gt; but was:&lt;33[3]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;33[0]&gt; but was:&lt;33[3]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)

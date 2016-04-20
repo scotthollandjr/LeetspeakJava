@@ -20,8 +20,9 @@ public class Leetspeak {
     String leetWords = new String();
 
     for (char letter : letterArray) {
+      // if ( leetLibrary.get(letter) != null )
       leetWords += leetLibrary.get(Character.toString(letterArray[0]));
-    }
+    } // else {}
     return leetWords;
   }
 }
