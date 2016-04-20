@@ -16,13 +16,13 @@ public class Leetspeak {
     leetLibrary.put("I", "1");
     leetLibrary.put("s", "z");
 
-    String leetWords = new String();
     char[] letterArray = inputWords.toCharArray();
+    String leetWords = new String();
 
     for (char letter : letterArray) {
-      leetWords += leetLibrary.get(letter);
+      leetWords += leetLibrary.get(Character.toString(letterArray[0]));
     }
-    return "3";
+    return leetWords;
   }
 }
 
